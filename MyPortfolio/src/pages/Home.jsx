@@ -1,4 +1,6 @@
 import Navbar from "../components/navbar";
+import Hero from "../components/hero";
+
 
 const Home = () => {
   return (
@@ -7,10 +9,7 @@ const Home = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center text-center bg-primary text-third px-6">
-        <h1 className="text-4xl font-bold">Hi, I'm Harshdeep Singh</h1>
-        <p className="text-lg mt-4">Front-End Developer | JavaScript Enthusiast</p>
-      </section>
+      <Hero />
 
       {/* Placeholder for Projects Section */}
       <section id="projects" className="h-screen bg-secondary1 text-third flex items-center justify-center text-3xl">
