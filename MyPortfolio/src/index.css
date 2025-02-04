@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #0e0e0e;
+  --secondary-color-1: #4E31AA;
+  --secondary-color-2: #3795BD;
+  --third-color: #F7F7F8;
+
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
