@@ -272,16 +272,17 @@ p, a, ul, li, span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 40px;
     margin: 0;
 }
 
 
 .skills-title-container h1{
-    font-size: 4rem;
+    font-size: 6rem;
+    margin: 0;
 }
 .skills-title-container h2{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .skills-title-container{
     display: flex;
@@ -293,7 +294,7 @@ p, a, ul, li, span{
     width: 70%;
     height: 20vh;
     background-color: #0e0e0e;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -353,10 +354,18 @@ p, a, ul, li, span{
 .skills-container:hover .scroll-content {
     animation-play-state: paused;
 }
+/* Fading Effect on Edges */
+.skills-container {
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .skills-container {
         height: auto;
+    }
+    .skills-title-container h1{
+        font-size: 3rem;
     }
 }
