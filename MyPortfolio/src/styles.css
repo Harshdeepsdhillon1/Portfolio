@@ -1,11 +1,21 @@
+h1, h2, h3{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p, a, ul, li, span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 /* Navbar Styles */
 .navbar {
     background-color: #0e0e0e;
     color: #F7F7F8;
-    padding: 20px 50px;
+    padding: 20px;
     position: fixed;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
     top: 0;
@@ -16,7 +26,7 @@
   
   .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -129,35 +139,81 @@
     }
   }
   
-  /* Hero Section */
+ /* Hero Section */
 .hero {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #0e0e0e;
     color: #F7F7F8;
+    padding: 25px 100px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Hero Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   .hero-container {
     display: flex;
-    align-items: center;
+    align-items:last baseline;
     text-align: center;
     justify-content: space-between;
+    opacity: 1;
+    
   }
   
+  
   .hero-title {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left;
+    opacity: 1;
+    animation: slideInTitle 1s ease-out forwards;
+  }
+  
+  @keyframes slideInTitle {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
   .hero-subtitle {
-    font-size: 4rem;
+    font-size: 2.75rem;
     margin-bottom: 30px;
     text-align: right;
+    opacity: 1;
+    animation: slideInSubtitle 1s ease-out forwards;
+  }
+  .hero-para{
+    font-size: 1.4rem;
+    color: #F7F7F8;
+  }
+  
+  @keyframes slideInSubtitle {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
   /* Scroll Arrow */
@@ -165,12 +221,16 @@
     display: inline-block;
     margin-top: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   
   .scroll-arrow:hover {
-    transform: translateY(5px); /* Slight hover effect */
+    transform: translateY(5px);
+    color: #4E31AA;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
+  
+
   
   /* Responsive Design */
   @media screen and (max-width: 1024px) {
@@ -188,11 +248,115 @@
   }
   
   @media screen and (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+    }
     .hero-title {
       font-size: 4rem;
+      text-align: center;
     }
   
     .hero-subtitle {
       font-size: 2rem;
+      text-align: center;
     }
   }
+  span{
+    color: #4E31AA;
+  }
+
+
+ /* Skills Section */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.skills-title-container h1{
+    font-size: 4rem;
+}
+.skills-title-container h2{
+    font-size: 2rem;
+}
+.skills-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+}
+.skills-container {
+    width: 70%;
+    height: 20vh;
+    background-color: #0e0e0e;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Scroll Wrapper */
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Scrolling Content */
+.scroll-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-right 15s linear infinite;
+}
+
+/* Skill Items */
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    background-color: #F7F7F8;
+    border-radius: 20px;
+}
+
+.skill-item img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Scale Effect on Hover */
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+/* Rightward Scrolling Animation */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.skills-container:hover .scroll-content {
+    animation-play-state: paused;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        height: auto;
+    }
+}
