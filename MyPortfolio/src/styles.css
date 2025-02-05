@@ -272,7 +272,7 @@ p, a, ul, li, span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 80px 40px 40px 40px;
     margin: 0;
 }
 
@@ -369,3 +369,134 @@ p, a, ul, li, span{
         font-size: 3rem;
     }
 }
+
+/*Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 100px;
+  }
+  
+  .project-title {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .project-title h1 {
+    font-size: 2rem;
+    color: #4E31AA;
+  }
+  
+  .project-title h2 {
+    font-size: 6rem;
+    color: #F7F7F8;
+    margin-top: 15px;
+  }
+  
+  /* Project Grid */
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Project Items */
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #F7F7F8;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 70vh;
+  }
+  
+  /* Alternate positioning */
+  .project.left .project-info {
+    order: 1;
+  }
+  
+  .project.left .project-image {
+    order: 2;
+  }
+  
+  .project.right .project-info {
+    order: 2;
+  }
+  
+  .project.right .project-image {
+    order: 1;
+  }
+  
+  /* Project Info */
+  .project-info {
+    color: #0e0e0e;
+  }
+  
+  .project-info h3 {
+    font-size: 2.4rem;
+    color: #4E31AA;
+    margin-bottom: 10px;
+  }
+  
+  .project-skills {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .project-skills li {
+    background-color: #4E31AA;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .project-info p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  /* GitHub Button */
+  .github-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .github-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Project Image */
+  .project-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 900px) {
+    .project {
+      grid-template-columns: 1fr;
+      text-align: center;
+      
+    }
+  
+    .project-info {
+      order: 1 !important;
+    }
+  
+    .project-image {
+      order: 2 !important;
+    }
+  }
+  
