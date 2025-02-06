@@ -1,36 +1,21 @@
 import { motion } from "framer-motion";
 import { ArrowBigDownDash } from "lucide-react";
 import { Link } from "react-scroll";
-import "../styles.css"; // Ensure styles are correctly linked
+import "../styles.css";
 
 const Hero = () => {
-  const staggeredText = {
-    hidden: { opacity: 0, y: -100 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.3, // Stagger delay
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <section className="hero">
       <motion.div
         className="hero-container"
-        initial="hidden"
-        animate="show"
-        variants={staggeredText}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <motion.h1 className="hero-title" variants={staggeredText}>
+        <h1 className="hero-title">
           Harshdeep <span>Singh</span>
-        </motion.h1>
-        <motion.h2 className="hero-subtitle" variants={staggeredText}>
-          Front-End Developer & Web Dev Enthusiast
-        </motion.h2>
+        </h1>
+        <h2 className="hero-subtitle">Front-End Developer & Web Dev Enthusiast</h2>
       </motion.div>
       <motion.p
         className="hero-para"
