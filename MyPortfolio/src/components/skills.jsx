@@ -1,5 +1,8 @@
 import React from "react";
 import "../styles.css"; // Ensure styles are linked
+import ScrollReveal from "./scrollreveal";
+import { ArrowBigDownDash } from "lucide-react";
+import { Link } from "react-scroll";
 
 const skills = [
   { src: "/images/html.png", alt: "HTML" },
@@ -26,9 +29,11 @@ const Skills = () => {
     <section className="skills" id="skills">
       
       <div className="skills-title-container">
-        <h1><span>Technologies</span> </h1>
+        <ScrollReveal><h1><span>Technologies</span> </h1></ScrollReveal>
         <h2>I work with</h2>
       </div>
+      
+      
       <div className="skills-container">
         <div className="scroll-wrapper">
           <ul className="scroll-content">
@@ -40,6 +45,10 @@ const Skills = () => {
           </ul>
         </div>
       </div>
+      {/* Scroll Down Arrow */}
+      <Link to="projects" smooth={true} duration={500} className="scroll-arrow">
+        <ArrowBigDownDash size={40} color="#4E31AA" />
+      </Link>
     </section>
   );
 };

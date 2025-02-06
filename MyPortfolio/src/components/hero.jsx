@@ -1,30 +1,36 @@
 import { motion } from "framer-motion";
 import { ArrowBigDownDash } from "lucide-react";
 import { Link } from "react-scroll";
+import FadeIn from "./FadeIn"; // Import the FadeIn component
 import "../styles.css";
+import ScrollReveal from "./scrollreveal";
 
 const Hero = () => {
   return (
     <section className="hero">
-      <motion.div
-        className="hero-container"
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <h1 className="hero-title">
-          Harshdeep <span>Singh</span>
-        </h1>
-        <h2 className="hero-subtitle">Front-End Developer & Web Dev Enthusiast</h2>
-      </motion.div>
-      <motion.p
-        className="hero-para"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
-        Building Modern, Scalable, and Creative Web Experiences.
-      </motion.p>
+     
+        <div className="hero-container">
+        <FadeIn delay={0.2}>
+          <h1 className="hero-title">
+            Harshdeep <span>Singh</span>
+          </h1>
+        </FadeIn>
+        <FadeIn delay={0.4}>
+          <h2 className="hero-subtitle">Front-End Developer</h2>
+        </FadeIn>
+        </div>
+        
+      
+      <FadeIn delay={0.6}>
+        <motion.p
+          className="hero-para"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          Building Modern, Scalable, and Creative Web Experiences.
+        </motion.p>
+      </FadeIn>
 
       {/* Scroll Down Arrow */}
       <Link to="skills" smooth={true} duration={500} className="scroll-arrow">

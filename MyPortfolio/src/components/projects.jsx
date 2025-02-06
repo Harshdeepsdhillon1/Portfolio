@@ -1,5 +1,8 @@
+// Projects.jsx
 import React from "react";
-import "../styles.css"; // Make sure this path is correct
+import FadeIn from "./FadeIn"; // Import the FadeIn component
+import "../styles.css"; // Ensure this path is correct
+import ScrollReveal from "./scrollreveal";
 
 const projects = [
   {
@@ -32,29 +35,33 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="project-title">
-        <h1>Explore My</h1>
-        <h2>Best Works</h2>
+          <h1>Explore My</h1>
+        <ScrollReveal delay={0.4}>
+          <h2>Best Works</h2>
+        </ScrollReveal>
       </div>
 
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div className={`project ${index % 2 === 0 ? "left" : "right"}`} key={index}>
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <ul className="project-skills">
-                {project.skills.map((skill, i) => (
-                  <li key={i}>{skill}</li>
-                ))}
-              </ul>
-              <p>{project.description}</p>
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                <img src="/images/github.png" alt="GitHub" className="github-icon" />
-              </a>
+          <ScrollReveal key={index} delay={0.6}>
+            <div className={`project ${index % 2 === 0 ? "left" : "right"}`}>
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <ul className="project-skills">
+                  {project.skills.map((skill, i) => (
+                    <li key={i}>{skill}</li>
+                  ))}
+                </ul>
+                <p>{project.description}</p>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <img src="/images/github.png" alt="GitHub" className="github-icon" />
+                </a>
+              </div>
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+              </div>
             </div>
-            <div className="project-image">
-              <img src={project.image} alt={project.title} />
-            </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>

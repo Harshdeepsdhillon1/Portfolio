@@ -2,15 +2,19 @@ h1, h2, h3{
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 p, a, ul, li, span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
 }
 
 
 /* Navbar Styles */
 .navbar {
-    background-color: #0e0e0e;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    
     color: #F7F7F8;
     padding: 20px;
     position: fixed;
@@ -46,6 +50,7 @@ p, a, ul, li, span{
     text-decoration: none;
     color: #F7F7F8;
     transition: color 0.3s ease;
+    cursor: pointer;
   }
   
   .nav-links li a:hover {
@@ -125,19 +130,20 @@ p, a, ul, li, span{
     z-index: 1000;
     transition: opacity 0.4s ease-in-out;
   }
-  /*Progess Bar*/
-  .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999; /* Ensures it stays above other content */
-    height: 5px;
-    background-color: #4E31AA;
-    transform-origin: left;
-    scaleX: 0; /* Initial scale, starts from 0 */
-    transition: scaleX 0.2s ease-out;
-  }
+ /* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width to allow scaling from center */
+  height: 5px;
+  background-color: #4E31AA;
+  z-index: 9999;
+  /**box-shadow: 0 0 2px 2px #4E31AA; /* Glowing effect */
+  /**transition: box-shadow 0.3s ease-in-out;*/
+}
+
+
   
   
   /* Responsive Design for Nav Bar */
@@ -192,41 +198,19 @@ p, a, ul, li, span{
     margin-bottom: 20px;
     text-align: left;
     opacity: 1;
-    animation: slideInTitle 1s ease-out forwards;
   }
   
-  @keyframes slideInTitle {
-    0% {
-      transform: translateX(-20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
+
   .hero-subtitle {
-    font-size: 2.75rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     text-align: right;
     opacity: 1;
-    animation: slideInSubtitle 1s ease-out forwards;
+    
   }
   .hero-para{
     font-size: 1.4rem;
     color: #F7F7F8;
-  }
-  
-  @keyframes slideInSubtitle {
-    0% {
-      transform: translateX(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
   }
   
   /* Scroll Arrow */
@@ -298,10 +282,11 @@ p, a, ul, li, span{
 
 .skills-title-container h1{
     font-size: 6rem;
-    margin: 0;
+    margin-bottom: 0;
 }
 .skills-title-container h2{
     font-size: 2rem;
+    margin-top: 0;
 }
 .skills-title-container{
     display: flex;
@@ -462,7 +447,7 @@ p, a, ul, li, span{
   }
   
   .project-info h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #4E31AA;
     margin-bottom: 10px;
   }
@@ -528,19 +513,30 @@ p, a, ul, li, span{
   .contact {
     text-align: center;
     padding: 0px 100px 20px 100px;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #F7F7F8;
+    background-color: #0e0e0e;
   }
-
+  .contact-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom: 0;
+  }
   
   .contact-title {
     font-size: 6rem;
     color: #4E31AA;
-    margin-bottom: 20px;
+    margin-top: 0;
+    
+  }
+  .contact-subtitle{
+    font-size: 2rem;
+    margin-bottom: 0;
   }
   
   /* Contact Links Container */
@@ -548,14 +544,15 @@ p, a, ul, li, span{
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
   
   /* Social Icons */
   .contact-icon {
     width: 40px;
     height: 40px;
-    color: #0e0e0e;
+    color: #F7F7F8;
     transition: transform 0.3s ease, color 0.3s ease;
   }
   
@@ -564,28 +561,8 @@ p, a, ul, li, span{
     transform: scale(1.2);
   }
   
-  /* Scroll to Top Button */
-  .scroll-to-top {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
   
-  .scroll-icon {
-    width: 50px;
-    height: 50px;
-    color: #0e0e0e;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
   
-  .scroll-icon:hover {
-    color: #4E31AA;
-    transform: scale(1.1);
-  }
   
   /* Responsive */
   @media screen and (max-width: 600px) {
@@ -624,8 +601,9 @@ p, a, ul, li, span{
   }
   
   .resume-btn:hover {
-    background-color: #0e0e0e;
+    background-color: #F7F7F8;
     transform: scale(1.05);
+    color: #4E31AA;
   }
 
 
