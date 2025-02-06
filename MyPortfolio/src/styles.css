@@ -219,6 +219,8 @@ p, a, ul, li, span{
   /* Scroll Arrow */
   .scroll-arrow {
     display: inline-block;
+    width: 50px;
+    height: 50px;
     margin-top: 20px;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -234,6 +236,10 @@ p, a, ul, li, span{
   
   /* Responsive Design */
   @media screen and (max-width: 1024px) {
+    .hero{
+        height: 100vh;
+        padding: 10px 100px;
+    }
     .hero-title {
       font-size: 6rem;
     }
@@ -243,7 +249,7 @@ p, a, ul, li, span{
     }
   
     .scroll-arrow {
-      margin-top: 10px;
+      margin-top: 0px;
     }
   }
   
@@ -272,7 +278,7 @@ p, a, ul, li, span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 80px 40px 40px 40px;
+    padding: 80px 40px 20px 40px;
     margin: 0;
 }
 
@@ -282,7 +288,7 @@ p, a, ul, li, span{
     margin: 0;
 }
 .skills-title-container h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 .skills-title-container{
     display: flex;
@@ -300,6 +306,7 @@ p, a, ul, li, span{
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 /* Scroll Wrapper */
@@ -362,6 +369,7 @@ p, a, ul, li, span{
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
     .skills-container {
         height: auto;
     }
@@ -387,12 +395,13 @@ p, a, ul, li, span{
   .project-title h1 {
     font-size: 2rem;
     color: #4E31AA;
+    margin-bottom: 10px;
   }
   
   .project-title h2 {
     font-size: 6rem;
     color: #F7F7F8;
-    margin-top: 15px;
+    margin-top: 0px;
   }
   
   /* Project Grid */
@@ -498,5 +507,174 @@ p, a, ul, li, span{
     .project-image {
       order: 2 !important;
     }
+    .project-title h2 {
+        font-size: 3rem;
+    }
   }
   
+  .contact {
+    text-align: center;
+    padding: 0px 100px 20px 100px;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F8;
+  }
+
+  
+  .contact-title {
+    font-size: 6rem;
+    color: #4E31AA;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Links Container */
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  /* Social Icons */
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    color: #0e0e0e;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    color: #4E31AA;
+    transform: scale(1.2);
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .scroll-icon {
+    width: 50px;
+    height: 50px;
+    color: #0e0e0e;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .scroll-icon:hover {
+    color: #4E31AA;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .contact-title{
+        font-size: 5rem;
+    }
+    .contact{
+        height: 85vh;
+        padding: 10px 100px;
+    }
+    .contact-links {
+      gap: 15px;
+    }
+  
+    .contact-icon {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .scroll-icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .resume-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4E31AA;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #0e0e0e;
+    transform: scale(1.05);
+  }
+
+
+  /*Footer Section*/
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #0e0e0e;
+    color: #f7f7f8;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-text {
+    text-align: center;
+    flex: 1;
+    margin-left: 140px;
+    white-space: nowrap;
+  }
+  
+  /* Container for social icons */
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    min-width: 120px; /* Ensures proper spacing on small screens */
+  }
+  
+  /* Social Icons */
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #F7F7F8;
+  }
+  
+  .footer-icon:hover {
+    color: #4E31AA;
+    transform: scale(1.2);
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 30px;
+    }
+  
+    .footer-text {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .footer-icons {
+      width: 100%;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  
+ 

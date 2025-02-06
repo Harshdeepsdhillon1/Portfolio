@@ -2,6 +2,8 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 const Home = () => {
   return (
@@ -16,10 +18,10 @@ const Home = () => {
       {/*Projects Section */}
       <Projects />
 
-      {/* Placeholder for Contact Section */}
-      <section id="contact" className="h-screen bg-secondary2 text-third flex items-center justify-center text-3xl">
-        Contact Section
-      </section>
+      {/* Contact Section */}
+      <Contact />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
