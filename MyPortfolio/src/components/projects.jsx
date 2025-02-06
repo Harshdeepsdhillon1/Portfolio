@@ -6,27 +6,27 @@ import ScrollReveal from "./scrollreveal";
 
 const projects = [
   {
-    title: "E-commerce Website",
-    skills: ["React", "CSS", "Firebase"],
+    title: "Travel Planner Website",
+    skills: ["Node", "Express", "MongoDB"],
     description:
-      "Developed a responsive e-commerce platform with real-time product updates and authentication.",
-    githubLink: "https://github.com/yourusername/ecommerce-project",
+      "Developed a responsive Travel Planner platform with CRUD Functionality and authentication using OAuth.",
+    githubLink: "https://github.com/Harshdeepsdhillon1/COMP2068JSFrameworks/tree/main/ASSIGNMENT02",
     image: "/images/ecommerce.png",
   },
   {
-    title: "Weather Forecast App",
-    skills: ["React", "API Integration", "Bootstrap"],
+    title: "Movie APP",
+    skills: ["Java", "API Integration", "Firebase"],
     description:
-      "Created a weather forecast app that fetches real-time data from OpenWeather API.",
-    githubLink: "https://github.com/yourusername/weather-app",
+      "Created a Movie App with CRUD functionality that fetches real-time data from OMDB API with user Authentication.",
+    githubLink: "https://github.com/Harshdeepsdhillon1/MovieApp",
     image: "/images/weather.png",
   },
   {
-    title: "Task Manager App",
-    skills: ["MERN Stack", "Redux", "MongoDB"],
+    title: "Retro Lamborghini Concept Website",
+    skills: ["JavaScript", "CSS", "Bootstrap"],
     description:
-      "A full-stack task management system with CRUD functionality and user authentication.",
-    githubLink: "https://github.com/yourusername/task-manager",
+      "Retro Lamborghini concept website made using HTML, CSS, JavaScript and Bootstrap.",
+    githubLink: "https://harshdeepsdhillon1.github.io/RetroLamborghini/",
     image: "/images/task-manager.png",
   },
 ];
