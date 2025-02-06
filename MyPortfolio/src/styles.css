@@ -20,7 +20,6 @@ p, a, ul, li, span{
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
   
@@ -126,6 +125,20 @@ p, a, ul, li, span{
     z-index: 1000;
     transition: opacity 0.4s ease-in-out;
   }
+  /*Progess Bar*/
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensures it stays above other content */
+    height: 5px;
+    background-color: #4E31AA;
+    transform-origin: left;
+    scaleX: 0; /* Initial scale, starts from 0 */
+    transition: scaleX 0.2s ease-out;
+  }
+  
   
   /* Responsive Design for Nav Bar */
   @media screen and (max-width: 768px) {
@@ -603,11 +616,11 @@ p, a, ul, li, span{
     padding: 12px 20px;
     font-size: 1rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #F7F7F8;
     background-color: #4E31AA;
     border-radius: 8px;
     text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .resume-btn:hover {
@@ -623,7 +636,7 @@ p, a, ul, li, span{
     align-items: center;
     padding: 20px 100px;
     background-color: #0e0e0e;
-    color: #f7f7f8;
+    color: #F7F7F8;
     font-size: 16px;
     flex-wrap: wrap;
   }
