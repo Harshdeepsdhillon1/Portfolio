@@ -19,7 +19,7 @@ const projects = [
     description:
       "Created a Movie App with CRUD functionality that fetches real-time data from OMDB API with user Authentication.",
     githubLink: "https://github.com/Harshdeepsdhillon1/MovieApp",
-    image: "/images/weather.png",
+    image: "/images/project-2.png",
   },
   {
     title: "Retro Lamborghini Concept Website",
