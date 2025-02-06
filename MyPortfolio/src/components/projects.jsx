@@ -11,7 +11,7 @@ const projects = [
     description:
       "Developed a responsive Travel Planner platform with CRUD Functionality and authentication using OAuth.",
     githubLink: "https://github.com/Harshdeepsdhillon1/COMP2068JSFrameworks/tree/main/ASSIGNMENT02",
-    image: "/images/ecommerce.png",
+    image: "/images/project-1.png",
   },
   {
     title: "Movie APP",
@@ -27,7 +27,7 @@ const projects = [
     description:
       "Retro Lamborghini concept website made using HTML, CSS, JavaScript and Bootstrap.",
     githubLink: "https://harshdeepsdhillon1.github.io/RetroLamborghini/",
-    image: "/images/task-manager.png",
+    image: "/images/project-3.png",
   },
 ];
 
@@ -47,19 +47,21 @@ const Projects = () => {
             <div className={`project ${index % 2 === 0 ? "left" : "right"}`}>
               <div className="project-info">
                 <h3>{project.title}</h3>
-                <ul className="project-skills">
+                <FadeIn><ul className="project-skills">
                   {project.skills.map((skill, i) => (
                     <li key={i}>{skill}</li>
                   ))}
-                </ul>
+                </ul></FadeIn>
                 <p>{project.description}</p>
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <FadeIn><a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                   <img src="/images/github.png" alt="GitHub" className="github-icon" />
                 </a>
+                </FadeIn>
               </div>
-              <div className="project-image">
+              <ScrollReveal><div className="project-image">
                 <img src={project.image} alt={project.title} />
               </div>
+              </ScrollReveal>
             </div>
           </ScrollReveal>
         ))}

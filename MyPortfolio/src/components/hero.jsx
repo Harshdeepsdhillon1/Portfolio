@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
         </FadeIn>
         <FadeIn delay={0.4}>
-          <h2 className="hero-subtitle">Front-End Developer</h2>
+          <h2 className="hero-subtitle">Software Developer</h2>
         </FadeIn>
         </div>
         
