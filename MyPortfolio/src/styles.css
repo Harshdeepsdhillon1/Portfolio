@@ -590,7 +590,7 @@ p, a, ul, li, span{
   /* Responsive */
   @media screen and (max-width: 600px) {
     .contact-title{
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .contact{
         height: 85vh;
