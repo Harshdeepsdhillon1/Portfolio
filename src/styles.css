@@ -249,6 +249,8 @@ section{
   @media screen and (max-width: 768px) {
     .hero-container {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .hero-title {
       font-size: 3rem;
@@ -512,7 +514,9 @@ section{
   /* Responsive */
   @media screen and (max-width: 768px) {
     .project {
-      grid-template-columns: 1fr;
+     display: flex;
+     flex-direction: column;
+
       text-align: center;
       justify-content: center;
       align-items: center;
