@@ -424,9 +424,10 @@ section{
   .projects-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+
+    ga: 40px;
     width: 100%;
-    max-width: 1200px;
+    
   }
   
   /* Project Items */
@@ -514,8 +515,8 @@ section{
   /* Responsive */
   @media screen and (max-width: 768px) {
     .project {
-     display: flex;
-     flex-direction: column;
+      display: flex;
+      flex-direction: column;
       text-align: center;
       justify-content: center;
       align-items: center;
