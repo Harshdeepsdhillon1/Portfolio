@@ -7,15 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <p className="footer-text">Coded by Harshdeep Singh</p>
       <div className="footer-icons">
-        <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="harshdeepsdhillon1@gmail.com" target="_blank" rel="noopener noreferrer">
           <Mail className="footer-icon" />
         </a>
 
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/harshdeepsdhillon1" target="_blank" rel="noopener noreferrer">
           <Github className="footer-icon" />
         </a>
 
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/harshdeep-singh-dhillon/" target="_blank" rel="noopener noreferrer">
           <Linkedin className="footer-icon" />
         </a>
       </div>

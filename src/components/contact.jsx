@@ -32,8 +32,7 @@ const Contact = () => {
         </a>
       </div>
       <a
-      href="/resume.pdf" // Update with your actual resume file link
-      download="Harshdeep_Singh_Resume.pdf"
+      href="/resume.docx" download="Harshdeep_singh.docx"
       className="resume-btn"
     >
       Download Resume
