@@ -29,8 +29,8 @@ const Skills = () => {
     <section className="skills" id="skills">
       
       <div className="skills-title-container">
-        <ScrollReveal><h1><span>Technologies</span> </h1></ScrollReveal>
-        <h2>I work with</h2>
+        <ScrollReveal><h2 className="skills-title">Technologies</h2></ScrollReveal>
+        <h3 className="skills-subtitle">I work with</h3>
       </div>
       
       

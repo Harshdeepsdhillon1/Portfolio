@@ -1,14 +1,22 @@
 h1, h2, h3{
     font-weight: 900;
     text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
     cursor: default;
 }
 p, a, ul, li, span{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
     cursor: default;
 }
-
+section{
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* Navbar Styles */
 .navbar {
@@ -243,12 +251,16 @@ p, a, ul, li, span{
       flex-direction: column;
     }
     .hero-title {
-      font-size: 4rem;
+      font-size: 3rem;
       text-align: center;
     }
   
     .hero-subtitle {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .hero-para {
+      font-size: 1rem;
       text-align: center;
     }
     
@@ -269,11 +281,12 @@ p, a, ul, li, span{
 }
 
 
-.skills-title-container h1{
+.skills-title{
     font-size: 6rem;
+    color: #4E31AA;
     margin-bottom: 0;
 }
-.skills-title-container h2{
+.skills-subtitle{
     font-size: 2rem;
     margin-top: 0;
 }
@@ -360,19 +373,19 @@ p, a, ul, li, span{
     .skills-container {
         height: auto;
     }
-    .skills-title-container h1{
+    .skills-title{
         font-size: 3rem;
     }
-    .skills-title-container h2{
+    .skills-subtitle{
       font-size: 1.5rem;
     }
 }
  /* Styles for screens between 768px and 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .skills-title-container h1{
+    .skills-title{
       font-size: 4rem;
     } 
-    .skills-title-container h2{
+    .skills-subtitle{
       font-size: 2rem;
     }
   
@@ -393,13 +406,13 @@ p, a, ul, li, span{
     margin-top: 50px;
   }
   
-  .project-title h1 {
+  .project-title h2 {
     font-size: 2rem;
     color: #4E31AA;
     margin-bottom: 10px;
   }
   
-  .project-title h2 {
+  .project-title h3 {
     font-size: 6rem;
     color: #F7F7F8;
     margin-top: 0px;
@@ -427,7 +440,7 @@ p, a, ul, li, span{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     height: 70vh;
   }
-  .project-image
+  
   
   /* Alternate positioning */
   .project.left .project-info {
@@ -514,10 +527,10 @@ p, a, ul, li, span{
     .project-image {
       order: 2 !important;
     }
-    .project-title h2 {
+    .project-title h3 {
         font-size: 3rem;
     }
-    .project-title h1{
+    .project-title h2{
       font-size: 1.5rem;
     }
   }
@@ -526,7 +539,7 @@ p, a, ul, li, span{
     .project-title h2 {
       font-size: 3rem;
   }
-  .project-title h1{
+  .project-title h2{
     font-size: 1.5rem;
   }
   }
@@ -538,12 +551,12 @@ p, a, ul, li, span{
     color: #F7F7F8;
   }
   
-  .about-header h2 {
+  .about-title {
     font-size: 6rem;
     color: #4E31AA;
     margin-bottom: 0;
   }
-  .about-header h3{
+  .about-subtitle{
     font-size: 2rem;
     margin-top: 0;
   }
@@ -596,10 +609,10 @@ p, a, ul, li, span{
       text-align: center;
       gap: 20px;
     }
-    .about-header h2{
+    .about-title{
       font-size: 4rem;
     }
-    .about-header h3{
+    .about-subtitle{
       font-size: 2rem;
     }
     .about-text h3{
@@ -639,10 +652,10 @@ p, a, ul, li, span{
       align-items: center;
       text-align: center;
     }
-    .about-header h2{
+    .about-title{
       font-size: 3rem;
     }
-    .about-header h3{
+    .about-subtitle{
       font-size: 1.5rem;
     }
     .about-text {

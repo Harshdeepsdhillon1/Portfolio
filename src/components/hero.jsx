@@ -3,7 +3,6 @@ import { ArrowBigDownDash } from "lucide-react";
 import { Link } from "react-scroll";
 import FadeIn from "./FadeIn"; // Import the FadeIn component
 import "../styles.css";
-import ScrollReveal from "./scrollreveal";
 
 const Hero = () => {
   return (

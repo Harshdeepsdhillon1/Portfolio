@@ -8,8 +8,8 @@ const About = () => {
       {/* Title and Subtitle */}
       <div className="about-header">
         <ScrollReveal>
-        <h2>About Me</h2>
-        <h3>Passionate Front-End Developer</h3>
+        <h2 className="about-title">About Me</h2>
+        <h3 className="about-subtitle">Passionate Front-End Developer</h3>
         </ScrollReveal>
         
       </div>

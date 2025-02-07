@@ -35,9 +35,9 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="project-title">
-          <h1>Explore My</h1>
+          <h2>Explore My</h2>
         <ScrollReveal delay={0.4}>
-          <h2>Best Works</h2>
+          <h3>Best Works</h3>
         </ScrollReveal>
       </div>
 
