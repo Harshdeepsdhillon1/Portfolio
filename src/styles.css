@@ -13,8 +13,7 @@ p, a, ul, li, span{
 /* Navbar Styles */
 .navbar {
     background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
-    
+    backdrop-filter: blur(8px);    
     color: #F7F7F8;
     padding: 20px;
     position: fixed;
@@ -423,6 +422,7 @@ p, a, ul, li, span{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     height: 70vh;
   }
+  .project-image
   
   /* Alternate positioning */
   .project.left .project-info {
@@ -489,13 +489,16 @@ p, a, ul, li, span{
     width: 100%;
     border-radius: 10px;
   }
+  .project-image:nth-child(2){
+    height: 400px;
+  }
   
   /* Responsive */
   @media screen and (max-width: 900px) {
     .project {
       grid-template-columns: 1fr;
       text-align: center;
-      
+      height: 100vh;
     }
   
     .project-info {
