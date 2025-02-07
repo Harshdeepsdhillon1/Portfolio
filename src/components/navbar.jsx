@@ -13,7 +13,7 @@ const Navbar = () => {
       
 
       <nav className="navbar">
-      <div className="logo"><a href="home"><img src="../public/images/logo.png" alt="logo" /></a></div>
+      <div className="logo"><a href="/"><img src="/images/logo.png" alt="logo" /></a></div>
         <div className="navbar-container">
           {/* Desktop Menu */}
           <ul className="nav-links">
