@@ -424,8 +424,9 @@ section{
   .projects-container {
     display: grid;
     grid-template-columns: 1fr;
-
-    ga: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     width: 100%;
     
   }
