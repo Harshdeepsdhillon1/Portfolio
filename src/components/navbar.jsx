@@ -13,10 +13,11 @@ const Navbar = () => {
       
 
       <nav className="navbar">
+      <div className="logo"><a href="home"><img src="../public/images/logo.png" alt="logo" /></a></div>
         <div className="navbar-container">
           {/* Desktop Menu */}
           <ul className="nav-links">
-            <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li><Link to="hero" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="about" smooth={true} duration={500}>About</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>

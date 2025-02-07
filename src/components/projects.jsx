@@ -22,7 +22,7 @@ const projects = [
     image: "/images/project-2.png",
   },
   {
-    title: "Retro Lamborghini Concept Website",
+    title: "Retro Lamborghini Concept",
     skills: ["JavaScript", "CSS", "Bootstrap"],
     description:
       "Retro Lamborghini concept website made using HTML, CSS, JavaScript and Bootstrap.",
