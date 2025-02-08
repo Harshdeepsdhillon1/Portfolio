@@ -26,7 +26,7 @@ body {
   :root {
     --h1-h2-size: 4rem;
     --h3-size: 2rem;
-    --p-size: 1rem;
+    --p-size: 1.25rem;
   }
 }
 

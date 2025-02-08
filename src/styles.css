@@ -8,7 +8,8 @@ h1, h2, h3{
 p, a, ul, li, span{
   font-family: "Roboto Condensed", serif;
   font-optical-sizing: auto;
-    cursor: default;
+  cursor: default;
+  font-size: var(--p-size);
 }
 h1, h2 {
   font-size: var(--h1-h2-size);
@@ -184,9 +185,6 @@ section{
       display: block;
       
     }
-    .logo{
-      margin-right: 100px;
-    }
   }
   
  /* Hero Section */
@@ -209,8 +207,7 @@ section{
     align-items:last baseline;
     text-align: center;
     justify-content: space-between;
-    opacity: 1;
-    
+    opacity: 1; 
   }
   
   
@@ -229,7 +226,6 @@ section{
     opacity: 1;
   }
   .hero-para{
-    font-size: 1.5rem;
     color: var(--third-color);
   }
   
@@ -268,19 +264,11 @@ section{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
     }
-    .hero-title {
+    .hero-title, .hero-subtitle, .hero-para {
       text-align: center;
     }
-  
-    .hero-subtitle {
-      text-align: center;
-    }
-    .hero-para {
-      font-size: 1rem;
-      text-align: center;
-    }
-    
   }
 
  /* Skills Section */
@@ -334,7 +322,7 @@ section{
     align-items: center;
     gap: 20px;
     width: max-content;
-    animation: scroll-right 15s linear infinite;
+    animation: scroll-right 25s linear infinite;
 }
 
 /* Skill Items */
@@ -381,7 +369,9 @@ section{
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-
+    .skills{
+      height: 100vh;
+    }
     .skills-container {
         height: auto;
     }
@@ -463,7 +453,6 @@ section{
   }
   
   .project-info h3 {
-    font-size: 2rem;
     color: var(--secondary-color);
     margin-bottom: 10px;
   }
@@ -481,11 +470,9 @@ section{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 0.9rem;
   }
   
   .project-info p {
-    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
@@ -545,7 +532,6 @@ section{
   .about-header p {
     margin-bottom: 40px;
     color: var(--third-color);
-    font-size: 2rem;
   }
   
   .about-grid {
@@ -562,9 +548,7 @@ section{
   .about-text h3{
     color: var(--secondary-color);
   }
-  .about-text p{
-    font-size: 1.5rem;
-  }
+
   
   .about-image-center img {
     width: 100%;
@@ -590,10 +574,7 @@ section{
       text-align: center;
       gap: 20px;
     }
-    .about-text p{
-      font-size: 1.5rem;
-    }
-  
+ 
     .about-image-center {
       display: flex;
       justify-content: center;
@@ -627,13 +608,10 @@ section{
     .about-text {
       text-align: center;
     }
-    .about-text p{
-      font-size: 1rem;
-    }
+
   
     .about-text h3 {
       text-align: center;
-      font-size: 1rem;
     }
   
     .about-image-center {
@@ -737,7 +715,6 @@ section{
   .resume-btn {
     display: inline-block;
     padding: 12px 20px;
-    font-size: 1rem;
     font-weight: bold;
     color: var(--third-color);
     background-color: var(--secondary-color);
@@ -761,7 +738,6 @@ section{
     padding: 20px 100px;
     background-color: var(--primary-color);
     color: var(--third-color);
-    font-size: 16px;
     flex-wrap: wrap;
   }
   
