@@ -3,7 +3,12 @@
 Welcome to my **personal portfolio website**, built using **React + Vite**! This project showcases my skills, projects, and experiences as a Front-End Developer.
 
 ## 🖥️ Live Demo
-🔗 **[Check it out on Vercel](https://your-vercel-link.vercel.app/)**
+🔗 **[Check it out on Vercel]# Portfolio Website
+
+Welcome to my **personal portfolio website**, built using **React + Vite**! This project showcases my skills, projects, and experiences as a Front-End Developer.
+
+## 🖥️ Live Demo
+🔗 **[Check it out on Vercel](https://harshdeepsingh.vercel.app/)**
 
 ---
 
@@ -97,11 +102,10 @@ portfolio/
 
 ## 📬 Contact
 📧 **Email:** your-email@example.com  
-🔗 **Portfolio:** [your-portfolio-link.com](https://your-portfolio-link.com)  
-💼 **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-📂 **GitHub:** [github.com/your-username](https://github.com/your-username)
+🔗 **Portfolio:** [your-portfolio-link.com](https://harshdeepsingh.vercel.app/)  
+💼 **LinkedIn:** [linkedin.com/in/your-profile](https://www.linkedin.com/in/harshdeep-singh-dhillon/)  
+📂 **GitHub:** [github.com/your-username](https://github.com/harshdeepsdhillon1)
 
 ---
 
 ### ⭐ If you like this project, feel free to **star** this repository! ⭐
-
