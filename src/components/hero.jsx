@@ -33,7 +33,7 @@ const Hero = () => {
 
       {/* Scroll Down Arrow */}
       <Link to="skills" smooth={true} duration={500} className="scroll-arrow">
-        <ArrowBigDownDash size={40} color="#4E31AA" />
+        <ArrowBigDownDash size={40}/>
       </Link>
     </section>
   );

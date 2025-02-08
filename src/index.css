@@ -4,9 +4,9 @@ html {
 
 :root {
 /*Change the colors to update the theme.*/
-  --primary-color: #0e0e0e;
-  --secondary-color: #4E31AA;
-  --third-color: #F7F7F8;
+  --primary-color: #f7f7f7;
+  --secondary-color: #A31D1D;
+  --third-color: #000000;
   /*Change the font to update the sizings*/
    --h1-h2-size: 6rem;
    --h3-size: 3rem;

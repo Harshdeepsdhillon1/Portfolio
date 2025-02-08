@@ -78,13 +78,13 @@ section{
   
   .nav-links li a {
     text-decoration: none;
-    color: var(--third-color);
+    color: var(--primary-color);
     transition: color 0.3s ease;
     cursor: pointer;
   }
   
   .nav-links li a:hover {
-    color: #4E31AA;
+    color: var(--secondary-color);
   }
   
   /* Mobile Menu Button */
@@ -481,6 +481,7 @@ section{
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
+    color: var(--secondary-color);
   }
   
   .github-icon:hover {
@@ -716,7 +717,7 @@ section{
     display: inline-block;
     padding: 12px 20px;
     font-weight: bold;
-    color: var(--third-color);
+    color: var(--primary-color);
     background-color: var(--secondary-color);
     border-radius: 8px;
     text-decoration: none;

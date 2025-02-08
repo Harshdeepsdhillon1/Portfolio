@@ -47,7 +47,7 @@ const Skills = () => {
       </div>
       {/* Scroll Down Arrow */}
       <Link to="projects" smooth={true} duration={500} className="scroll-arrow">
-        <ArrowBigDownDash size={40} color="#4E31AA" />
+        <ArrowBigDownDash size={40}/>
       </Link>
     </section>
   );
