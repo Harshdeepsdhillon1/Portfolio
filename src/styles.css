@@ -184,6 +184,9 @@ section{
       display: block;
       
     }
+    .logo{
+      margin-right: 100px;
+    }
   }
   
  /* Hero Section */
