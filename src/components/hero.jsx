@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero-container">
         <FadeIn delay={0.2}>
           <h1 className="hero-title">
-            Harshdeep <span>Singh</span>
+            Harshdeep Singh
           </h1>
         </FadeIn>
         <FadeIn delay={0.4}>

@@ -34,10 +34,10 @@ const projects = [
 const Projects = () => {
   return (
     <section className="projects" id="projects">
-      <div className="project-title">
-          <h2>Explore My</h2>
+      <div className="project-title-container">
+          <h3 className="project-subtitle">Explore My</h3>
         <ScrollReveal delay={0.4}>
-          <h3>Best Works</h3>
+          <h2 className="project-title">Best Works</h2>
         </ScrollReveal>
       </div>
 

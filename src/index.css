@@ -3,11 +3,14 @@ html {
 }
 
 :root {
+/*Change the colors to update the theme.*/
   --primary-color: #0e0e0e;
-  --secondary-color-1: #4E31AA;
-  --secondary-color-2: #3795BD;
+  --secondary-color: #4E31AA;
   --third-color: #F7F7F8;
-
+  /*Change the font to update the sizings*/
+   --h1-h2-size: 6rem;
+   --h3-size: 3rem;
+   --p-size: 1.5rem;
   --font-main: 'Inter', sans-serif;
 }
 
@@ -18,4 +21,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  :root {
+    --h1-h2-size: 4rem;
+    --h3-size: 2rem;
+    --p-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-h2-size: 3rem;
+    --h3-size: 1.5rem;
+    --p-size: 1rem;
+  }
+}
+
 
