@@ -22,11 +22,11 @@ const projects = [
     image: "/images/project-2.png",
   },
   {
-    title: "Retro Lamborghini Concept",
-    skills: ["JavaScript", "CSS", "Bootstrap"],
+    title: "Nike Website Design",
+    skills: ["React", "Tailwind", "Framer Motion"],
     description:
-      "Retro Lamborghini concept website made using HTML, CSS, JavaScript and Bootstrap.",
-    githubLink: "https://harshdeepsdhillon1.github.io/RetroLamborghini/",
+      "Nike website design made using React+Vite, CSS and  Framer Motion.",
+    githubLink: "https://harshdeepsdhillon1.github.io/Nike/",
     image: "/images/project-3.png",
   },
 ];
