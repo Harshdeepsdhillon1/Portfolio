@@ -26,7 +26,7 @@ const projects = [
     skills: ["React", "Tailwind", "Framer Motion"],
     description:
       "Nike website design made using React+Vite, CSS and  Framer Motion.",
-    githubLink: "https://harshdeepsdhillon1.github.io/Nike/",
+    githubLink: "https://nike-theta-ruby.vercel.app/",
     image: "/images/project-3.png",
   },
 ];
