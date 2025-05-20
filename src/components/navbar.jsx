@@ -32,19 +32,63 @@ const Navbar = () => {
         {/* Background Overlay (for mobile menu) */}
         {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}
 
-        {/* Mobile Menu */}
-        <div className={`mobile-nav ${isOpen ? "open" : ""}`}>
-          <button className="close-menu" onClick={() => setIsOpen(false)}>
-            <X size={28} />
-          </button>
-          <ul>
-            <li><a href="/" onClick={() => setIsOpen(false)}>Home</a></li>
-            <li><a href="/about" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><Link to="projects" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Projects</Link></li>
-            <li><Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Contact</Link></li>
-            <li><a href="/resume.pdf" target="_blank" onClick={() => setIsOpen(false)}>Resume</a></li>
-          </ul>
-        </div>
+       {/* Mobile Menu */}
+<div className={`mobile-nav ${isOpen ? "open" : ""}`}>
+  <button className="close-menu" onClick={() => setIsOpen(false)}>
+    <X size={28} />
+  </button>
+  <ul>
+    <li>
+      <Link to="hero" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="about" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="projects" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Projects
+      </Link>
+    </li>
+    <li>
+      <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
+{/* Mobile Menu */}
+<div className={`mobile-nav ${isOpen ? "open" : ""}`}>
+  <button className="close-menu" onClick={() => setIsOpen(false)}>
+    <X size={28} />
+  </button>
+  <ul>
+    <li>
+      <Link to="hero" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="about" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="projects" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Projects
+      </Link>
+    </li>
+    <li>
+      <Link to="contact" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
+
       </nav>
       {/* Scroll Progress Bar */}
       <ScrollProgress />
