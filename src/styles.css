@@ -351,6 +351,49 @@ section{
 .skill-item:hover {
     transform: scale(1.1);
 }
+/* Infinite scroll pause on hover */
+.scroll-wrapper:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+/* Tooltip styles */
+.skill-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 60%; /* Position tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+.skill-icon-wrapper:hover .tooltip {
+  opacity: 1;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+
 
 /* Rightward Scrolling Animation */
 @keyframes scroll-right {

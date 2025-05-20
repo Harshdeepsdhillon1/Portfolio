@@ -24,7 +24,7 @@ const skills = [
   { src: "/images/azure.png", alt: "Microsoft Azure" }
 ];
 
-const Skills = () => {
+const Skills = () => { 
   return (
     <section className="skills" id="skills">
       
@@ -39,8 +39,11 @@ const Skills = () => {
           <ul className="scroll-content">
             {[...skills, ...skills].map((skill, index) => (
               <li key={index} className="skill-item">
+              <div className="skill-icon-wrapper">
                 <img src={skill.src} alt={skill.alt} />
-              </li>
+                <div className="tooltip">{skill.alt}</div>
+              </div>
+            </li>
             ))}
           </ul>
         </div>
